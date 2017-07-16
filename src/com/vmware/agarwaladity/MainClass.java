@@ -14,7 +14,8 @@ public class MainClass {
 		}
 		else if (choice == 2) {
 			// calculate VM Pricing from Database
-			
+			// DatabaseUtility db = new DatabaseUtility();
+			// db.createDB();
 		}
 		else {
 			// Invalid choice
