@@ -455,25 +455,26 @@ public class DatabaseUtility {
 		
 		
 		DatabaseLoader loader = new DatabaseLoader();
-		/**loader.createTable("VM", VM);
+		// create tables
+		loader.createTable("VM", VM);
 		loader.createTable("Utilization", Utilization);
 		loader.createTable("Allocation", Allocation);
 		loader.createTable("Property", Property);
 		loader.createTable("Power", Power);
 		loader.createTable("VMHost", VMHost);
 		loader.createTable("HostCluster", HostCluster);
-		loader.createTable("Pricing", Pricing);*/
+		loader.createTable("Pricing", Pricing);
 		loader.createTable("PropertyPricing", PropertyPricing);
 		
-		// DatabaseLoader loader = new DatabaseLoader();
-		// loader.insertTable("F1.csv", "VM", VM);
-		// loader.insertTable("F2.csv", "Utilization", Utilization);
-		// loader.insertTable("F3.csv", "Allocation", Allocation);
-		// loader.insertTable("F4.csv", "Property", Property);
-		// loader.insertTable("F5.csv", "Power", Power);
-		// loader.insertTable("F6.csv", "VMHost", VMHost);
-		// loader.insertTable("F7.csv", "HostCluster", HostCluster);
-		// loader.insertTable("F8.csv", "Pricing", Pricing);
+		// insert data into tables
+		loader.insertTable("F1.csv", "VM", VM);
+		loader.insertTable("F2.csv", "Utilization", Utilization);
+		loader.insertTable("F3.csv", "Allocation", Allocation);
+		loader.insertTable("F4.csv", "Property", Property);
+		loader.insertTable("F5.csv", "Power", Power);
+		loader.insertTable("F6.csv", "VMHost", VMHost);
+		loader.insertTable("F7.csv", "HostCluster", HostCluster);
+		loader.insertTable("F8.csv", "Pricing", Pricing);
 		loader.insertTable("F9.csv", "PropertyPricing", PropertyPricing);
 	}
 }
